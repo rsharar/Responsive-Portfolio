@@ -30,6 +30,8 @@
 
 .box-middle {
     background-image: url(../images/brushed.png);
+    margin-top: 50px;
+    margin-bottom:50px;
 }
 /* #menu {
     text-align: right;
@@ -143,15 +145,15 @@
 */
 .banner-1 {
     background-color: #4aaaa5;
+    font-size: 20px;
+    font-weight: bold;
     color: white;
-    width: 200px;
-    height: 20px;
+    width: 220px;
+    height: 30px;
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 10px;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 16px;
+    transform: translate(30%);
 }
 /*
 #proj-1 {
