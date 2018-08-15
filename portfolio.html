@@ -1,4 +1,4 @@
-<!--Basic-portfolio "Portfolio" page-->
+<!--Responsive-portfolio "Portfolio" page-->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -6,8 +6,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
 
 </head>
 
@@ -15,57 +16,32 @@
 <body>  
     
     <!--Header box for name and menu-->
-    <div class = "header">
-        <div id = "name">
-            Rudy Sharar
+     <!--Nav bar section-->
+     <div class="row">
+            <div class="column col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#" style="padding-right: 900px; padding-left: 100px; background-color: #4aaaa5; color: white;">Rudy Sharar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Contact</a>
+                            <a class="nav-item nav-link" href="#">Portfolio</a>
+                          </div>
+                        </div>
+                </nav>
+            </div>
         </div>
-    
-
-        <div class = "non-heading-font" id ="menu">
-            <ahref="https://rsharar.github.io/Basic-Portfolio/">About   |   </a><ahref="#">Portfolio   |   </a><ahref="#">Contact</a> 
-        </div>
-
-    </div>
 
 
     <!--Portfolio box-->
-    <section class="box-middle">
-            <div id="about-me-box">
-                    <div id="about-me-header">
-                        Portfolio
-                        <div id="about-me-line">
-
-                        </div>
-                            <div class="grid-2x3">
-                                <div class="project-tile" id="proj-1">
-                                    <div id="banner-1">
-                                        Hangman
-                                    </div>
-                                </div>
-                                <div class="project-tile" id="proj-2">
-                                    <div id="banner-1">
-                                        RPG
-                                    </div>
-                                </div>
-                                <div class="project-tile" id="proj-3">
-                                    <div id="banner-1">
-                                        Trivia
-                                    </div>
-                                </div>
-                                <div class="project-tile" id="proj-4">
-                                    <div id="banner-1">
-                                        Rock-Paper-Scissors
-                                    </div>
-                                </div>
-                                <div class="project-tile" id="proj-5">
-                                    <div id="banner-1">
-                                        Science Rules
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-            </div>  
-    </section>
+    div.row
+    
+    
+    
+    "
     <!--Copyright footer-->
     <div id="footer-copyright">
         <p class="bottom">Copyright &#169;</p>
