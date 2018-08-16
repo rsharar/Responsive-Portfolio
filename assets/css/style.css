@@ -1,4 +1,4 @@
-/* Basic-portfolio styling */
+/* Reponsive-portfolio styling */
 
 /* .header {
     background-color: #ffffff;
@@ -183,13 +183,14 @@
     position: relative;
     height: 40px;
     border-top: 7px solid #4aaaa5;
-    text-align: center;
 }
 
-#copyright {
-    color: #666666;
+.footer {
+    color: white;
     font-size: 10px;
     text-align: center;
+    position:relative;
+    bottom: -12px;
 }
 /*
 .bottom {
