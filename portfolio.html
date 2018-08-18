@@ -1,103 +1,75 @@
-<!--Responsive-portfolio "Portfolio" page-->
+<!--Basic-portfolio "Portfolio" page-->
 
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
 </head>
 
 
 <body>  
-     <!--Nav bar-->
-    <div class="container-fluid" style="position: relative;">
-        <div class="row">
-            <div class="column col-md-12" style="margin-top: 20px;">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <!-- Green name box -->
-                        <a class="navbar-brand" href="#" style="background-color: #4aaaa5; color: white; width: 15%; text-align: center;">Rudy Sharar</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        <!-- About Me, Contact, Portfolio Menu -->
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="padding-left: 900px;">
-                          <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="file:///Users/rudysharar/Responsive-Portfolio/index.html">About <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="file:///Users/rudysharar/Responsive-Portfolio/contact.html">Contact</a>
-                            <a class="nav-item nav-link" href="file:///Users/rudysharar/Responsive-Portfolio/portfolio.html">Portfolio</a>
-                          </div>
-                        </div>
-                </nav>
-            </div>
+    
+    <!--Header box for name and menu-->
+    <div class = "header">
+        <div id = "name">
+            Rudy Sharar
         </div>
+    
+
+        <div class = "non-heading-font" id ="menu">
+            <a href="https://rsharar.github.io/Responsive-Portfolio/">About</a>   |   <a href="#">Portfolio</a>   |   <a href="#">Contact</a> 
+        </div>
+
     </div>
-    <!-- Portfolio grid -->
-        <div class="container-fluid" style="background-image: url(assets/images/brushed.png); padding-top: 50px; padding-bottom: 50px;">
-            <div class="container-fluid box-middle" style="border: 2px solid #dddddd; width:960px; background-color:white">
-                    <!-- About me text and image -->
-                        <div class = "non-heading-font" id = "about-me-header">
-                            Portfolio
+
+    <!--Portfolio box-->
+    <section class="box-middle">
+            <div id="about-me-box">
+                    <div id="about-me-header">
+                        Portfolio
+                        <div id="about-me-line">
+
                         </div>
-                <div class="row" style = "margin-top: 50px; margin-bottom: 50px;">
-                    <div class="col-md-4">
-                        <img src="assets/images/hangman.png" class="mx-auto d-block" height="250px" width="250px" style="position: relative;">
-                        <div class="banner-1">
-                            Hangman
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/rpg.jpeg" class="mx-auto d-block" height="250px" width="250px" style="position: relative">
-                        <div class="banner-1">
-                            RPG
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                    </div>
-                </div>
-                <div class="row" style = "margin-bottom: 50px;">
-                    <div class="col-md-4">
-                        <img src="assets/images/trivia.jpeg" class="mx-auto d-block" height="250px" width="250px" style="position: relative">
-                        <div class="banner-1">
-                                Trivia
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                            <img src="assets/images/rock.jpeg" class="mx-auto d-block" height="250px" width="250px" style="position: relative">
-                            <div class="banner-1">
-                                Rock-Paper-Scissors
+                            <div class="grid-2x3">
+                                <div class="project-tile" id="proj-1">
+                                    <div id="banner-1">
+                                        Hangman
+                                    </div>
+                                </div>
+                                <div class="project-tile" id="proj-2">
+                                    <div id="banner-1">
+                                        RPG
+                                    </div>
+                                </div>
+                                <div class="project-tile" id="proj-3">
+                                    <div id="banner-1">
+                                        Trivia
+                                    </div>
+                                </div>
+                                <div class="project-tile" id="proj-4">
+                                    <div id="banner-1">
+                                        Rock-Paper-Scissors
+                                    </div>
+                                </div>
+                                <div class="project-tile" id="proj-5">
+                                    <div id="banner-1">
+                                        Science Rules
+                                    </div>
+                                </div>
                             </div>
                     </div>
-                    <div class="col-md-4">
-                    </div>
-                    
-                </div>
-                <div class="row" style = "margin-bottom: 50px;">
-                    <div class="col-md-4">
-                            <img src="assets/images/science.jpeg" class="mx-auto d-block" height="250px" width="250px" style="position: relative">
-                            <div class="banner-1">
-                                Science Rules
-                            </div>
-                    </div>
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-4">
-                    </div>
-                </div>
-            </div>
-        </div>  
+            </div>  
+    </section>
     <!--Copyright footer-->
-    <div class="container-fluid" style= "position: absolute;">
-        <div class="row">
-            <div class="col-md-12 footer-copyright">
-                <p class="footer">Copyright &#169;</p>
-            </div>
-        </div>
+    <div id="footer-copyright">
+        <p class="bottom">Copyright &#169;</p>
     </div>
-        
-        
 
 </body>
 </html>

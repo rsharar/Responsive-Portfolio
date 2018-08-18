@@ -1,54 +1,123 @@
-/* Reponsive-portfolio styling */
-.navcolumn {
-    margin-top: 20px;
+/* Basic-portfolio styling */
+
+body {
+    color: #777777;
 }
-#namebox {
-    background-color: #4aaaa5; 
-    color: white; 
-    width: 15%; 
-    text-align: center;
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    height: 90px;
 }
-.menu-collapse{
-    padding-left: 900px;  
-}
+
 .non-heading-font {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    text-align: left;
-    color: #62a8a4;
-    font-size: 24px;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-bottom: 10px;
-    padding-right: 20px;
-    border-bottom: 3px solid #dddddd;
-}
-
-.backgroundimage {
-    height:50px; 
-    background-image: url(assets/images/brushed.png);
-}
-
-.background {
-    background-image: url(/assets/images/brushed.png);
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #name {
     background-color: #4aaaa5;
+    width: 200px;
     color: white;
-    font-size: 24px;
+    font-size: 30px;
+    float: left;
+    margin-left: 210px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center; 
-    height: 100px;
+    display: inline;
 }
 
-.biography {
+#menu {
+    text-align: right;
+    padding-right: 200px;
+    padding-top: 40px;
+    font-size: 16px;
+}
+
+
+.box-middle {
+    clear: both;
+    overflow: auto;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-image: url(../images/brushed.png);
+}
+
+#about-me-box {
+    background-color: #ffffff;
+    width: 960px;
+    border: 2px solid #dddddd;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    padding-top: 10px;
+}
+
+#about-me-line {
+    height: 0px;
+    border-bottom: 3px solid #dddddd;
+    width: 900px;
+    padding-top: 10px;
+}
+
+#about-me-header {
+    text-align: left;
+    color: #62a8a4;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px; 
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#img {
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px; 
+    padding-left: 20px;  
+    width: 200px;
+    height: 200px; 
+}
+
+#biography {
     line-height: 2.0;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#form {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 900px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
 }
 
-.submit-btn {
+#contact-form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 900px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border: 1px solid #dddddd;
+    font-size: 16px;
+}
+
+#message-form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 900px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    height: 200px;
+    border: 1px solid #dddddd;
+}
+
+#submit-btn {
     background-color: #4aaaa5;
     color: white;
     text-align: center;
@@ -57,44 +126,195 @@
     padding-right: 20px;
     margin-bottom: 20px;
     font-size: 18px;
+
 }
 
-.banner-1 {
-    background-color: #4aaaa5;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    width: 220px;
-    height: 30px;
-    text-align: center;
-    position: absolute;
-    bottom: 16px;
-    transform: translate(15%);
+.grid-2x3 {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
-
-.footer-copyright {
-    background-color:#666666;
+.project-tile {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
     position: relative;
+    font-size: 18px;
+}
+
+
+#banner-1 {
+    background-color: #4aaaa5;
+    color: white;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#proj-1 {
+    background-image: url(../images/hangman.png);
+}
+
+#proj-2 {
+    background-image: url(../images/rpg.jpeg);
+}
+
+#proj-3 {
+    background-image: url(../images/trivia.jpeg);
+}
+
+#proj-4 {
+    background-image: url(../images/rock.jpeg);
+}
+
+#proj-5 {
+    background-image: url(../images/science.jpeg);
+}
+
+#footer-copyright {
+    background-color:#666666;
+    font-size: 10px;
+    width: 100%;
+    color: #777777;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
     height: 40px;
     border-top: 7px solid #4aaaa5;
 }
 
-.footer {
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    position:relative;
-    bottom: -12px;
+.bottom {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+
 }
 
 
 @media screen and (max-width: 640px) {
-	position: static;
+    .header{
+        height:100%;
+        padding:20px;
+        margin-left: auto;
+    }
+    #name {
+        float: none;
+        padding:20px;
+        margin: auto;
+        width: 50%;
+    }
+    #menu {
+        float: none;
+        margin: auto;
+        text-align:center;
+    }
+    #about-me-box {
+        width: 100%;
+
+    }
+    #img {
+        width: auto;
+        height: auto;
+    }
+    #about-me-line {
+        width: 100%;
+    }
+    #form {
+        width: 90%;
+    }
+    
+    #contact-form {
+        width:100%;
+    }
+    #message-form {
+        width: 100%;
+    }
 }
-
 @media screen and (max-width: 768px) {
-	
-
+    .header{
+        height:100%;
+        padding:20px;
+        margin-left: 200px;
+    }
+    #name {
+        float: none;
+        padding:20px;
+        margin: auto;
+        width: 50%;
+    }
+    #menu {
+        float: none;
+        margin: auto;
+    }
+    #about-me-box {
+        width: 100%;
+    }
+    #img {
+        width: auto;
+        height: auto;
+    }
+    #about-me-line {
+        width: 100%;
+    }
+    #form {
+        width: 90%;
+    }
+    #contact-form {
+        width:100%;
+    }
+    #message-form {
+        width: 100%;
+    }
+    .grid-2x3 {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 980px) {
-	
+    .header{
+        height:100%;
+        padding:20px;
+        margin-left: 200px;
+    }
+    #name {
+        float: none;
+        padding:20px;
+        margin: auto;
+        width: 50%;
+    }
+    #menu {
+        float: none;
+        margin: auto;
+    }
+    #about-me-box {
+        width: 100%;
+    }
+    #img {
+        width: auto;
+        height: auto;
+    }
+    #about-me-line {
+        width: 100%;
+    }
+    #form {
+        width: 90%;
+    }
+    #contact-form {
+        width:100%;
+    }
+    #message-form {
+        width: 100%;
+    }
+    .grid-2x3 {
+        width: 100%;
+    }
 }

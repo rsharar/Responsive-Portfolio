@@ -5,60 +5,59 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <link rel="stylesheet" href ="../Responsive-Portfolio/assets/css/style.css">
-  <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 
 <body>  
     
-    <!--Nav bar section-->
-    <div class="container-fluid">
-            <div class="row">
-                <div class="column col-md-12" style="margin-top: 20px;">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                            <a class="navbar-brand" href="#" style="background-color: #4aaaa5; color: white; width: 15%; text-align: center;">Rudy Sharar</a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="padding-left: 900px;">
-                              <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="file:///Users/rudysharar/Responsive-Portfolio/index.html">About <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="file:///Users/rudysharar/Responsive-Portfolio/contact.html">Contact</a>
-                                <a class="nav-item nav-link" href="file:///Users/rudysharar/Responsive-Portfolio/portfolio.html">Portfolio</a>
-                              </div>
-                            </div>
-                    </nav>
-                </div>
-            </div>
+    <!--Header box for name and menu-->
+    <div class = "header">
+        <div id = "name">
+            Rudy Sharar
         </div>
-    <!-- Background color -->
-        <div class="container-fluid" style="background-image: url(assets/images/brushed.png); padding-top: 50px; padding-bottom: 50px;">
-            <div class="container" style="border: 2px solid #dddddd; width:960px; background-color: white;">
-                <!-- About me text and image -->
-                    <div class = "non-heading-font" id = "about-me-header">
-                        About Me
+    
+
+        <div class = "non-heading-font" id ="menu">
+            <a href="https://rsharar.github.io/Responsive-Portfolio/">About</a>   |   <a href="#">Portfolio</a>   |   <a href="#">Contact</a> 
+        </div>
+
+    </div>
+
+
+    <!--About me box-->
+    <section class="box-middle">
+            <div id="about-me-box">
+                <div class = "non-heading-font" id = "about-me-header">
+                    About Me
+                
+                    <div id="about-me-line">
                     </div>
-                        <div style="padding: 5px;">
-                            <img src="assets/images/rudy.jpg" alt="profile pic" class="rounded float-left" height="250px" width="250px" style="margin-right: 20px;">
-                        </div>
-                    <div class="biography" style="margin: 20px;">
-                        <p>I was born and raised in the Seattle area, graduating from the University of Washington with a B.S. in Biochemistry in 2011. While in college I traveled to Honduras through Global Medical Brigades, studied M. tuberculosis in the <a href="https://depts.washington.edu/chattlab/">Chatterjee Research Lab</a> and was a walk-on practice player for the men's basketball team which advanced to the Sweet 16 in the 2010 NCAA Tournament.</p>
-                        
-                        <p>After graduating college, I moved to the Bay Area where began my teaching career through the program <a href="https://www.teachforamerica.org/">Teach For America</a>. I taught high school Chemistry and AP Chemistry in Richmond, CA, working with some of the most driven and motivated students and adults in the world. In addition to teaching, I was the head coach of the boy's varsity basketball team and the leader of the Robotics Club, the latter of which was my first exposure to the power of computer science and software. </p>
-                        
-                        <p>I enrolled in a few Coursera classes to learn some Python and after moving back to Seattle and teaching Physics at Summit Sierra, I joined a digital literacy company called Actively Learn to combine my two passions: education and technology. When I'm not pursuing these two activities, I'm either playing basketball or somewhere outside, taking advantage of all the glorious Pacific Northwest has to offer.</p>
-                    </div>
+                </div>
+                <div id = "img">
+                    <img src="assets/images/rudy.jpg" width=200px height=200px>
+                </div>
+
+                <div class = "non-heading-font" id ="biography">
+                    <p>I was born and raised in the Seattle area, graduating from the University of Washington with a B.S. in Biochemistry in 2011. While in college I traveled to Honduras through Global Medical Brigades, studied M. tuberculosis in the <a href="https://depts.washington.edu/chattlab/">Chatterjee Research Lab</a> and was a walk-on practice player for the men's basketball team which advanced to the Sweet 16 in the 2010 NCAA Tournament.</p>
+                    <br>
+                    <p>After graduating college, I moved to the Bay Area where began my teaching career through the program <a href="https://www.teachforamerica.org/">Teach For America</a>. I taught high school Chemistry and AP Chemistry in Richmond, CA, working with some of the most driven and motivated students and adults in the world. In addition to teaching, I was the head coach of the boy's varsity basketball team and the leader of the Robotics Club, the latter of which was my first exposure to the power of computer science and software. </p>
+                    <br>
+                    <p>I enrolled in a few Coursera classes to learn some Python and after moving back to Seattle and teaching Physics at Summit Sierra, I joined a digital literacy company called Actively Learn to combine my two passions: education and technology. When I'm not pursuing these two activities, I'm either playing basketball or somewhere outside, taking advantage of all the glorious Pacific Northwest has to offer.</p>
+                </div>
             </div>  
-        </div>        
+              
+    </section>
+        
         <!--Copyright footer-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 footer-copyright">
-                    <p class="footer">Copyright &#169;</p>
-                </div>
-            </div>
+        <div id="footer-copyright">
+            <p class="bottom non-heading-font" >Copyright &#169;</p>
         </div>
+
+
 </body>
 </html>
